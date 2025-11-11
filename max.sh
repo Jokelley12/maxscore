@@ -5,7 +5,7 @@
 echo "Enter 5 scores:"
 read -r s1 s2 s3 s4 s5
 
-scores=($s1 $s2 $s3 $s4 $s5)
+read -r -a scores <<< "$s1 $s2 $s3 $s4 $s5"
 
 max=${scores[0]}
 
